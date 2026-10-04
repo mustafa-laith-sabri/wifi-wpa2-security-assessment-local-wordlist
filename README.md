@@ -47,6 +47,8 @@ Performing an offline dictionary attack by matching the captured handshake file 
 
 ![Crack Phase 2](images/crack%202.png)
 
+![WLAN Phase 7](images/wlan%209.png)
+
 🔒 Security Recommendations...
 Avoid Predictable Passphrases: Never use mobile phone numbers, national IDs, or sequential numbers as Wi-Fi passwords.
 
