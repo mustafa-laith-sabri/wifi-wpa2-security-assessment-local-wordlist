@@ -12,30 +12,40 @@ Generating an exhaustive wordlist targeting Zain Iraq mobile numbers (11 digits 
 
 ![Crunch Phase 2](images/crunch%202.png)
 
-![Crunch Phase 3]()
+![Crunch Phase 3](https://github.com/mustafa-laith-sabri/wifi-wpa2-security-assessment-local-wordlist/blob/main/images/crunch%20%203.png)
 
 ![Crunch Phase 4](images/crunch%204.png)
 
-crunch
-crunch 11 11 -t 078%%%%%%%% -o /home/kali/Desktop/zain_wordlist.txt
 
 Phase 2: Adapter Preparation & Monitor Mode Activation
 Configuring the wireless network adapter (wlan0) to enable Monitor Mode, allowing full packet capture across surrounding wireless channels.
 
-ifconfig
-sudo airmon-ng start wlan1
-sudo airodump-ng wlan1
+
+![WLAN Phase 1](images/wlan%201.png)
+
 
 Phase 3: Capturing the WPA2 4-Way Handshake
 Monitoring target AP traffic and capturing the EAPOL 4-Way Handshake during client re-authentication.
 
-sudo airodump-ng --bssid  -c  -w handshake_capture wlan0mon
+![WLAN Phase 2](images/wlan%202.png)
+
+![WLAN Phase 3](images/wlan%203.png)
+
+![WLAN Phase 4](images/wlan%204.png)
+
+![WLAN Phase 5](images/wlan%205.png)
+
+![WLAN Phase 6](images/wlan%206.png)
+
+![WLAN Phase 7](images/wlan%207.png)
+
 
 Phase 4: Offline Cracking using aircrack-ng
 Performing an offline dictionary attack by matching the captured handshake file against the customized Zain Iraq wordlist to recover the network key.
 
-aircrack-ng -w zain_wordlist.txt handshake_capture-01.cap
+![Crack Phase 1](images/crack%201.png)
 
+![Crack Phase 2](images/crack%202.png)
 
 🔒 Security Recommendations...
 Avoid Predictable Passphrases: Never use mobile phone numbers, national IDs, or sequential numbers as Wi-Fi passwords.
