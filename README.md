@@ -8,6 +8,13 @@ penetration testing scenario.
 ⚙️ Execution Phases & Methodology /
 Phase 1: Custom Wordlist Generation (crunch)
 Generating an exhaustive wordlist targeting Zain Iraq mobile numbers (11 digits starting with 078).
+![Crunch Phase 3](https://github.com/mustafa-laith-sabri/wifi-wpa2-security-assessment-local-wordlist/blob/main/images/crunch%20%201.png)
+
+![Crunch Phase 2](images/crunch%202.png)
+
+![Crunch Phase 3]()
+
+![Crunch Phase 4](images/crunch%204.png)
 
 crunch
 crunch 11 11 -t 078%%%%%%%% -o /home/kali/Desktop/zain_wordlist.txt
